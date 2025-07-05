@@ -1,38 +1,31 @@
 # Afghan City Guessing Game 🏙️
 
-<div dir="rtl">
-یک بازی ساده حدس زدن منطقه‌ها ساخته شده با Node.js، Express، EJS و PostgreSQL.
-</div>
+A simple city guessing game built with Node.js, Express, EJS, and PostgreSQL.
 
 ---
 
-## قابلیت‌ها
+## Features
 
-- حدس زدن تصادفی منطقه
-- پیگیری امتیاز کاربر
-- نمایش راهنما (Hint)
-- طراحی زیبا و مدرن با CSS
-
----
-
-## پیش‌نیازها
-
-- [Node.js](https://nodejs.org/) نسخه ۱۴ یا بالاتر
-- [PostgreSQL](https://www.postgresql.org/) و ابزار مدیریت آن (مثل pgAdmin)
-- Git (برای کلون کردن پروژه)
+- Random city guessing
+- User score tracking
+- Display hints
+- Modern and beautiful CSS design
 
 ---
 
-## شروع سریع
+## Prerequisites
 
-### 1. کلون کردن مخزن
+- [Node.js](https://nodejs.org/) version 14 or higher
+- [PostgreSQL](https://www.postgresql.org/) and a management tool like pgAdmin
+- Git (for cloning the project)
+
+---
+
+## Quick Start
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Somaiyanoori/afgan-city-guess.git
 cd afgan-city-guess
-
----
-
-
-
 ```
