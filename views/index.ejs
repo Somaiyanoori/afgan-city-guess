@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <h1 id="score">امتیاز شما : <%= userScore %></h1>
+      <h1>شهر را حدس بزنید!</h1>
+      <h2><%= randomDistrict %></h2>
+
+      <form action="/check" method="POST">
+        <input type="hidden" name="district" value="<%= randomDistrict %>" />
+        <input
+          type="text"
+          name="cityInput"
+          id="cityInput"
+          placeholder="حدس تان را وارد نمایید!"
+        />
+        <button type="submit" name="action" value="check">بررسی</button>
+        <button type="submit" name="action" value="hint">راهنما</button>
+      </form>
+
+      <% if(hintRegion) { %>
+
+      <p id="hint">این ناحیه مربوط به منطقه <%= hintRegion %> مربوط میشود.</p>
+
+      <% } %>
+    </div>
+  </body>
+</html>
